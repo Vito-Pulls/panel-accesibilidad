@@ -48,7 +48,7 @@ window.onload = function () {
   // INVERTIR COLORES
   // ------------------------
   let invertir = document.createElement("div");
-  invertir.textContent = "🧙‍♂️";
+  invertir.textContent = "◐";
   barra.appendChild(invertir);
 
   invertir.onclick = function () {
