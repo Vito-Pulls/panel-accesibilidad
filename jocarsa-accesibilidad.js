@@ -122,4 +122,31 @@ window.onload = function () {
 
     cuerpo.style.filter = filtros;
   }
+
+  barra.onmousedown = function (e) {
+    e.preventDefault();
+    let shiftX = e.clientX - barra.getBoundingClientRect().left;
+    let shiftY = e.clientY - barra.getBoundingClientRect().top;
+
+    function moveAt(pageX, pageY) {
+      barra.style.left = pageX - shiftX + "px";
+      barra.style.top = pageY - shiftY + "px";
+      barra.style.transform = ""; // quitar el translate mientras arrastras
+    }
+
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+
+    document.onmouseup = function () {
+      document.removeEventListener("mousemove", onMouseMove);
+      document.onmouseup = null;
+    };
+  };
+
+  barra.ondragstart = function () {
+    return false; // desactivar drag nativo
+  };
 };
