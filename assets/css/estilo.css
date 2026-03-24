@@ -39,9 +39,10 @@ footer {
 
 .jocarsa-accesibilidad {
   position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+  top: 20px;
+  transform: none;
+  right: 20px;
+  width: max-content;
   z-index: 9999;
 
   background: #222;
@@ -49,8 +50,9 @@ footer {
   padding: 10px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+  cursor: move;
 }
 
 .jocarsa-accesibilidad div {
@@ -61,4 +63,5 @@ footer {
   text-align: center;
   border-radius: 5px;
   font-size: 18px;
+  user-select: none;
 }
