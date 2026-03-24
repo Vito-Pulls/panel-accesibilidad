@@ -36,3 +36,29 @@ footer {
   padding: 20px;
   background: #ddd;
 }
+
+.jocarsa-accesibilidad {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jocarsa-accesibilidad div {
+  cursor: pointer;
+  background: white;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
