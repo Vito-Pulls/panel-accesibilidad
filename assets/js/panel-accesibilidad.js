@@ -9,7 +9,7 @@ window.onload = function () {
   console.log("Esto solo carga cuando la ventana haya cargado");
 
   let barra = document.createElement("div");
-  barra.classList.add("jocarsa-accesibilidad");
+  barra.classList.add("panel-accesibilidad");
 
   let cuerpo = document.querySelector("body");
   cuerpo.appendChild(barra);

@@ -37,7 +37,7 @@ footer {
   background: #ddd;
 }
 
-.jocarsa-accesibilidad {
+.panel-accesibilidad {
   position: fixed;
   top: 20px;
   transform: none;
@@ -55,7 +55,7 @@ footer {
   cursor: move;
 }
 
-.jocarsa-accesibilidad div {
+.panel-accesibilidad div {
   cursor: pointer;
   background: white;
   color: black;
